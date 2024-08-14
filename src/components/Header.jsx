@@ -6,29 +6,22 @@ function Header() {
   return (
     <div className="navbar container-fluid">
       <div>
-        <a className="navbar-brand mx-">
-          <img src="src/assets/mainphoto.png" height="150"></img>Danielle Steger
-        </a>
+        <a className="navbar-brand mx-">Danielle Steger</a>
       </div>
       <ul className="nav nav-underline">
         <li className="nav-item">
           <Link
-            to="/"
-            className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-          >
-            Home
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
             to="/About"
             className={
-              currentPage === '/About' ? 'nav-link active' : 'nav-link'
+              currentPage === '/' || currentPage === '/About'
+                ? 'nav-link active'
+                : 'nav-link'
             }
           >
             About Me
           </Link>
         </li>
+
         <li className="nav-item">
           <Link
             to="/Portfolio"

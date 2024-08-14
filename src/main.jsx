@@ -8,7 +8,6 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Resume from './pages/Resume.jsx';
 import Portfolio from './pages/Portfolio.jsx';
-import Home from './pages/Home.jsx';
 import Error from './pages/Error.jsx';
 import './index.css';
 
@@ -20,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <About />,
       },
       {
         path: '/About',

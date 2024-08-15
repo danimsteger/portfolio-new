@@ -1,3 +1,11 @@
+:root {
+  --lightmint: #f1f7ed;
+  --darkpurple: #331832;
+  --purple: #694d75;
+  --mauve: #cea0ae;
+  --darkgreen: #093a3e;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

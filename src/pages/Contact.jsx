@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { validateEmail } from '../utils/helpers';
+
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -43,7 +45,7 @@ export default function Contact() {
   };
 
   const handleEmailBlur = () => {
-    if (email.trim() === '') {
+    if (email.trim() === '' || !validateEmail(email)) {
       setEmailError(true);
     } else {
       setEmailError(false);

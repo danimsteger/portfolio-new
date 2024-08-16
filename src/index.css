@@ -24,7 +24,7 @@
   color: var(--lightpurple);
 }
 
-.nav-underline:hover .nav-link.active:hover {
+.nav-underline:hover .nav-link:hover {
   color: var(--darkpurple) !;
 }
 
@@ -52,7 +52,7 @@
 
 .card-footer {
   background-color: var(--mint) !;
-  border: none;
+  border: none!;
 }
 
 .card {
@@ -64,11 +64,11 @@
 }
 
 .footer-link {
-  color: var(--darkpurple);
+  color: var(--darkpurple) !;
 }
 
 .footer-link:hover {
-  color: var(--mauve);
+  color: var(--mauve) !;
   font-weight: bold;
 }
 /* :root {

@@ -24,6 +24,10 @@
   color: var(--lightpurple);
 }
 
+.nav-underline:hover .nav-link.active:hover {
+  color: var(--darkpurple);
+}
+
 .project-button,
 .project-button-link {
   background-color: var(--charcoal);

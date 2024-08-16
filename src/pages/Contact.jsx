@@ -72,9 +72,9 @@ export default function Contact() {
     <div>
       <h1 className="text-center"> Contact</h1>
       <div className="d-flex justify-content-center">
-        <div className="col-7 ">
+        <div className="col-7">
           <form
-            className="form form-control  justify-content-center"
+            className="form  justify-content-center"
             onSubmit={handleFormSubmit}
           >
             <input

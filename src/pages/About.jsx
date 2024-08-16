@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="">
       <h1 className="text-center"> About Me</h1>
-      <img src="src/assets/mainphoto.png" height="150"></img>
+      <img src="./assets/mainphoto.png" height="150"></img>
       <p>
         Hi! My name is Danielle Steger, and I am an aspiring software developer.
       </p>

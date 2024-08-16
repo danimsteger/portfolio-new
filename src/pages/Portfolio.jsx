@@ -17,7 +17,7 @@ const projects = [
     languages: 'JavaScript, Node.js, Express.js, Sequelize, Handlebars.js',
     link: 'https://tech-blog-4o3v.onrender.com',
     repository: 'https://github.com/danimsteger/tech-blog',
-    image: '../public/assets/speech.png',
+    image: './assets/speech.png',
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const projects = [
     languages: 'HTML, CSS, JavaScript, jQuery, dayjs, Bootstrap',
     link: 'https://danimsteger.github.io/weather-dashboard',
     repository: 'https://github.com/danimsteger/weather-dashboard',
-    image: 'src/assets/weather.png',
+    image: './assets/weather.png',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const projects = [
     languages: 'JavaScript, HTML, jQuery, Bulma',
     link: 'https://danimsteger.github.io/motivaction/',
     repository: 'https://github.com/danimsteger/motivaction',
-    image: 'src/assets/motiv2.png',
+    image: './assets/motiv2.png',
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const projects = [
     languages: 'JavaScript, SQL, Express.js, Node.js, Inquirer',
     link: 'https://drive.google.com/file/d/1r6mD8iPLumYyfLTntgI6QW7Ca7gprsKV/view?pli=1',
     repository: 'https://github.com/danimsteger/sql-employee-tracker',
-    image: 'src/assets/employee.png',
+    image: './assets/employee.png',
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const projects = [
     languages: 'JavaScript, HTML, CSS',
     link: 'https://danimsteger.github.io/my-blog/',
     repository: 'https://github.com/danimsteger/my-blog',
-    image: 'src/assets/speech.png',
+    image: './assets/speech.png',
   },
 ];
 

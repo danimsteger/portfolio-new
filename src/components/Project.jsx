@@ -12,12 +12,23 @@ function Project({ project }) {
         </p>
       </div>
       <div className="card-footer nav nav-underline justify-content-center">
-        <a href={project.link} target="_blank" className="nav-link">
-          Live App
-        </a>
-        <a href={project.repository} target="_blank" className="nav-link">
-          Repository
-        </a>
+        <div
+          className="btn-group"
+          role="group"
+          aria-label="Basic outlined example"
+        >
+          <button className="btn btn-outline-secondary">
+            <a href={project.link} target="_blank">
+              Live App
+            </a>
+          </button>
+
+          <button className="btn btn-outline-secondary">
+            <a href={project.repository} target="_blank">
+              Repository
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );

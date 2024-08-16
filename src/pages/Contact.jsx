@@ -71,54 +71,65 @@ export default function Contact() {
   return (
     <div>
       <h1 className="text-center"> Contact</h1>
-      <form className="form form-control" onSubmit={handleFormSubmit}>
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-          className="form-control"
-          onFocus={handleNameFocus}
-          onBlur={handleNameBlur}
-        ></input>
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email"
-          className="form-control"
-          onFocus={handleEmailFocus}
-          onBlur={handleEmailBlur}
-        ></input>
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text-area"
-          placeholder="Enter a message to Danielle here!"
-          className="form-control"
-          onFocus={handleMessageFocus}
-          onBlur={handleMessageBlur}
-        ></textarea>
-        <button type="submit">Submit</button>
-        {nameError && (
-          <div>
-            <p className="error-text">Name field cannot be left blank.</p>
-          </div>
-        )}
-        {emailError && (
-          <div>
-            <p className="error-text">Must be a valid email</p>
-          </div>
-        )}
-        {messageError && (
-          <div>
-            <p className="error-text">Message field cannot be left blank.</p>
-          </div>
-        )}
-      </form>
+      <div className="d-flex justify-content-center">
+        <div className="col-7 ">
+          <form
+            className="form form-control  justify-content-center"
+            onSubmit={handleFormSubmit}
+          >
+            <input
+              value={name}
+              name="name"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Name"
+              className="form-control my-3"
+              onFocus={handleNameFocus}
+              onBlur={handleNameBlur}
+            ></input>
+            <input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              placeholder="Email"
+              className="form-control my-3"
+              onFocus={handleEmailFocus}
+              onBlur={handleEmailBlur}
+            ></input>
+            <textarea
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              type="text-area"
+              placeholder="Enter a message to Danielle here!"
+              className="form-control my-3"
+              onFocus={handleMessageFocus}
+              onBlur={handleMessageBlur}
+            ></textarea>
+            <button type="submit" className="btn btn-secondary my-3">
+              Submit
+            </button>
+            {nameError && (
+              <div>
+                <p className="error-text">Name field cannot be left blank.</p>
+              </div>
+            )}
+            {emailError && (
+              <div>
+                <p className="error-text">Must be a valid email</p>
+              </div>
+            )}
+            {messageError && (
+              <div>
+                <p className="error-text">
+                  Message field cannot be left blank.
+                </p>
+              </div>
+            )}
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

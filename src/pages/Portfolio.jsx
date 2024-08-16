@@ -8,7 +8,8 @@ const projects = [
     languages: 'JavaScript, Node.js, Express.js, Sequelize, Handlebars.js',
     link: 'https://movie-app-uu6k.onrender.com/',
     repository: 'https://github.com/danimsteger/movie-app',
-    image: 'src/assets/reel.png',
+    image:
+      '/Users/daniellesteger/Desktop/uncc/modules/20-module/portfolio-new/src/assets/reel.png',
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const projects = [
     languages: 'JavaScript, Node.js, Express.js, Sequelize, Handlebars.js',
     link: 'https://tech-blog-4o3v.onrender.com',
     repository: 'https://github.com/danimsteger/tech-blog',
-    image: 'src/assets/web.png',
+    image:
+      '/Users/daniellesteger/Desktop/uncc/modules/20-module/portfolio-new/src/assets/web.png',
   },
   {
     id: 3,

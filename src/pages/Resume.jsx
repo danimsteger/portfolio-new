@@ -6,7 +6,7 @@ export default function Resume() {
         <p className="text-center">
           Download a PDF of Danielles Resume&nbsp;
           <a
-            href="../public/resumeportfolio.pdf"
+            href="./assets/resumeportfolio.pdf"
             target="_blank"
             download="resumeportfolio.pdf"
           >

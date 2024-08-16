@@ -25,23 +25,23 @@
 }
 
 .nav-underline:hover .nav-link.active:hover {
-  color: var(--darkpurple);
+  color: var(--darkpurple) !;
 }
 
 .project-button,
 .project-button-link {
-  background-color: var(--charcoal);
-  color: var(--mint);
-  text-decoration: none;
-  border: none;
+  background-color: var(--charcoal) !;
+  color: var(--mint) !;
+  text-decoration: none!;
+  border: none !;
 }
 
 .project-button:hover,
 .project-button-link:hover {
-  background-color: var(--lightmint);
-  color: var(--charcoal);
-  text-decoration: none;
-  border: none;
+  background-color: var(--lightmint) !;
+  color: var(--charcoal) !;
+  text-decoration: none!;
+  border: none!;
 }
 
 .card-img-top:hover {
@@ -51,7 +51,7 @@
 }
 
 .card-footer {
-  background-color: var(--mint);
+  background-color: var(--mint) !;
   border: none;
 }
 
@@ -61,6 +61,15 @@
 
 .card-header {
   border: none;
+}
+
+.footer-link {
+  color: var(--darkpurple);
+}
+
+.footer-link:hover {
+  color: var(--mauve);
+  font-weight: bold;
 }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

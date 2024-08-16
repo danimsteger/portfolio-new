@@ -5,7 +5,7 @@ export default function Resume() {
       <div className="m-4">
         <p className="text-center">
           Download a PDF of Danielles Resume&nbsp;
-          <a href="public/resume.portfolio.pdf" target="_blank" download>
+          <a href="../public/resume.portfolio.pdf" target="_blank" download>
             here
           </a>
           .

@@ -6,7 +6,7 @@ function Footer() {
           <a
             href="https://github.com/danimsteger"
             target="_blank"
-            className="nav-link"
+            className="nav-link footer-link"
           >
             GitHub
           </a>
@@ -16,7 +16,7 @@ function Footer() {
           <a
             href="https://www.linkedin.com/in/daniellesteger217/"
             target="_blank"
-            className="nav-link"
+            className="nav-link footer-link"
           >
             LinkedIn
           </a>
@@ -25,7 +25,7 @@ function Footer() {
           {' '}
           <a
             href="mailto:daniellestegertutoring@gmail.com"
-            className="nav-link"
+            className="nav-link footer-link"
           >
             {' '}
             Email

@@ -17,17 +17,21 @@ function Project({ project }) {
           role="group"
           aria-label="Basic outlined example"
         >
-          <button className="btn btn-outline-secondary">
-            <a href={project.link} target="_blank">
-              Live App
-            </a>
-          </button>
+          <a
+            className="btn btn-outline-secondary project-button"
+            href={project.link}
+            target="_blank"
+          >
+            Live App
+          </a>
 
-          <button className="btn btn-outline-secondary">
-            <a href={project.repository} target="_blank">
-              Repository
-            </a>
-          </button>
+          <a
+            className="btn btn-outline-secondary project-button "
+            href={project.repository}
+            target="_blank"
+          >
+            Repository
+          </a>
         </div>
       </div>
     </div>

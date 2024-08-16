@@ -6,10 +6,10 @@ function Header() {
   return (
     <div className="navbar container-fluid">
       <div>
-        <a className="navbar-brand mx-">Danielle Steger</a>
+        <a className="navbar-brand mx-5">Danielle Steger</a>
       </div>
-      <ul className="nav nav-underline">
-        <li className="nav-item">
+      <ul className="nav nav-underline mx-5">
+        <li className="nav-item ">
           <Link
             to="/About"
             className={

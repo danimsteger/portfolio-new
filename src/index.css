@@ -4,8 +4,60 @@
   --purple: #694d75;
   --mauve: #cea0ae;
   --darkgreen: #093a3e;
+  --deeppurple: #4f4750;
+  --mint: #bacec8;
+  --charcoal: #404e5c;
+  --lightpurple: #af9ab2;
 }
 
+* {
+  background-color: var(--lightmint);
+  color: var(--charcoal);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-underline .nav-link.active {
+  color: var(--deeppurple);
+}
+
+.nav-underline .nav-link {
+  color: var(--lightpurple);
+}
+
+.project-button,
+.project-button-link {
+  background-color: var(--charcoal);
+  color: var(--mint);
+  text-decoration: none;
+  border: none;
+}
+
+.project-button:hover,
+.project-button-link:hover {
+  background-color: var(--lightmint);
+  color: var(--charcoal);
+  text-decoration: none;
+  border: none;
+}
+
+.card-img-top:hover {
+  border: solid var(--lightmint) 5px;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 20px var(--charcoal), 0 0 15px var(--charcoal);
+}
+
+.card-footer {
+  background-color: var(--mint);
+  border: none;
+}
+
+.card {
+  border: solid var(--charcoal) 1px;
+}
+
+.card-header {
+  border: none;
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -80,7 +80,7 @@ p {
   font-size: 1.5rem;
 }
 a {
-  text-decoration: none !;
+  text-decoration: none;
 }
 
 a:hover {
@@ -88,11 +88,11 @@ a:hover {
 }
 
 .major-project {
-  text-decoration: none !;
+  text-decoration: none;
 }
 
 .major-project:hover {
-  text-decoration: none !;
+  text-decoration: none;
 }
 
 /* :root {

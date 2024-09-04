@@ -1,7 +1,14 @@
 import Project from "../components/Project";
 import CarouselProject from "../components/carouselitem";
 import Carousel from "react-bootstrap/Carousel";
-import { Card, Row, Col } from "react-bootstrap";
+import {
+  Card,
+  Row,
+  Col,
+  Tooltip,
+  OverlayTrigger,
+  Button,
+} from "react-bootstrap";
 
 const projects = [
   {
@@ -70,6 +77,20 @@ const projects = [
 ];
 
 export default function Portfolio() {
+  const circleButtonStyle = {
+    borderRadius: "50%",
+    width: "40px",
+    height: "40px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "var(--mint)",
+    color: "var(--mint)",
+    border: "none",
+    cursor: "pointer",
+    margin: 10,
+  };
+
   return (
     <div
       id="portfolio-section"
@@ -210,7 +231,7 @@ export default function Portfolio() {
                     {project.languages}
                   </small>
                 </p>
-                <div
+                {/* <div
                   className="btn-group"
                   role="group"
                   aria-label="Basic outlined example"
@@ -230,6 +251,36 @@ export default function Portfolio() {
                   >
                     Repository
                   </a>
+                </div> */}
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "var(--mint)",
+                  }}
+                >
+                  <OverlayTrigger
+                    placement="bottom"
+                    overlay={<Tooltip>Live Application</Tooltip>}
+                  >
+                    <a href={project.link} target="_blank">
+                      <img
+                        src="./assets/webbutton.png"
+                        style={circleButtonStyle}
+                      />
+                    </a>
+                  </OverlayTrigger>
+                  <OverlayTrigger
+                    placement="bottom"
+                    overlay={<Tooltip>Repository</Tooltip>}
+                  >
+                    <a href={project.repository} target="_blank">
+                      <img
+                        src="./assets/github.png"
+                        style={circleButtonStyle}
+                      />
+                    </a>
+                  </OverlayTrigger>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>

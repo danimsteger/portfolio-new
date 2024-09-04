@@ -11,13 +11,13 @@ export default function Resume2() {
           <h3>Front-End Proficiences </h3>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <ListGroup style={{ width: "50%" }}>
-              <ListGroup.Item>HTML</ListGroup.Item>
-              <ListGroup.Item>CSS</ListGroup.Item>
-              <ListGroup.Item>JavaScript</ListGroup.Item>
-              <ListGroup.Item>jQuery</ListGroup.Item>
-              <ListGroup.Item>React</ListGroup.Item>
-              <ListGroup.Item>Bootstrap</ListGroup.Item>
-              <ListGroup.Item>Ant Design</ListGroup.Item>
+              <ListGroup.Item className="list-group">HTML</ListGroup.Item>
+              <ListGroup.Item className="list-group">CSS</ListGroup.Item>
+              <ListGroup.Item className="list-group">JavaScript</ListGroup.Item>
+              <ListGroup.Item className="list-group">jQuery</ListGroup.Item>
+              <ListGroup.Item className="list-group">React</ListGroup.Item>
+              <ListGroup.Item className="list-group">Bootstrap</ListGroup.Item>
+              <ListGroup.Item className="list-group">Ant Design</ListGroup.Item>
             </ListGroup>
           </div>
         </Col>
@@ -25,15 +25,15 @@ export default function Resume2() {
           <h3>Back-End Proficiences </h3>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <ListGroup style={{ width: "50%" }}>
-              <ListGroup.Item>APIs</ListGroup.Item>
-              <ListGroup.Item>Node.js</ListGroup.Item>
-              <ListGroup.Item>Express.js</ListGroup.Item>
-              <ListGroup.Item>MySQL</ListGroup.Item>
-              <ListGroup.Item>Sequelize</ListGroup.Item>
-              <ListGroup.Item>MongoDB</ListGroup.Item>
-              <ListGroup.Item>Mongoose</ListGroup.Item>
-              <ListGroup.Item>REST</ListGroup.Item>
-              <ListGroup.Item>GraphQL</ListGroup.Item>
+              <ListGroup.Item className="list-group">APIs</ListGroup.Item>
+              <ListGroup.Item className="list-group">Node.js</ListGroup.Item>
+              <ListGroup.Item className="list-group">Express.js</ListGroup.Item>
+              <ListGroup.Item className="list-group">MySQL</ListGroup.Item>
+              <ListGroup.Item className="list-group">Sequelize</ListGroup.Item>
+              <ListGroup.Item className="list-group">MongoDB</ListGroup.Item>
+              <ListGroup.Item className="list-group">Mongoose</ListGroup.Item>
+              <ListGroup.Item className="list-group">REST</ListGroup.Item>
+              <ListGroup.Item className="list-group">GraphQL</ListGroup.Item>
             </ListGroup>
           </div>
         </Col>

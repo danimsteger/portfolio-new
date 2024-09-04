@@ -18,11 +18,11 @@ export default function About() {
           <img src="./assets/mainphoto.png" height="300"></img>
         </Col>
         <Col style={{ marginTop: 40, margin: 40 }}>
-          <p>
+          <p className="averia-regular">
             Hi! My name is Danielle Steger, and I am an aspiring software
             developer.
           </p>
-          <p>
+          <p className="averia-regular">
             I am originally from Irmo, South Carolina, and currently reside in
             Cayce, South Carolina. In 2019, I graduated from the University of
             South Carolinas Honors College with a Bachelor of Science in Middle

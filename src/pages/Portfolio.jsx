@@ -137,6 +137,42 @@ export default function Portfolio() {
                   data management and secure user authentication via JSON Web
                   Tokens
                 </Card.Text>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "var(--mint)",
+                  }}
+                >
+                  <OverlayTrigger
+                    placement="bottom"
+                    overlay={
+                      <Tooltip className="custom-tooltip">
+                        Live Application
+                      </Tooltip>
+                    }
+                  >
+                    <a href={projects[0].link} target="_blank">
+                      <img
+                        src="./assets/webbutton.png"
+                        style={circleButtonStyle}
+                      />
+                    </a>
+                  </OverlayTrigger>
+                  <OverlayTrigger
+                    placement="bottom"
+                    overlay={
+                      <Tooltip className="custom-tooltip">Repository</Tooltip>
+                    }
+                  >
+                    <a href={projects[0].repository} target="_blank">
+                      <img
+                        src="./assets/github.png"
+                        style={circleButtonStyle}
+                      />
+                    </a>
+                  </OverlayTrigger>
+                </div>
               </Card.Body>
             </Card>
           </a>
@@ -172,6 +208,42 @@ export default function Portfolio() {
                   the application integrates external APIs (OMDb and Watch Mode)
                   to provide users with comprehensive movie data.
                 </Card.Text>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "var(--mint)",
+                  }}
+                >
+                  <OverlayTrigger
+                    placement="bottom"
+                    overlay={
+                      <Tooltip className="custom-tooltip">
+                        Live Application
+                      </Tooltip>
+                    }
+                  >
+                    <a href={projects[1].link} target="_blank">
+                      <img
+                        src="./assets/webbutton.png"
+                        style={circleButtonStyle}
+                      />
+                    </a>
+                  </OverlayTrigger>
+                  <OverlayTrigger
+                    placement="bottom"
+                    overlay={
+                      <Tooltip className="custom-tooltip">Repository</Tooltip>
+                    }
+                  >
+                    <a href={projects[1].repository} target="_blank">
+                      <img
+                        src="./assets/github.png"
+                        style={circleButtonStyle}
+                      />
+                    </a>
+                  </OverlayTrigger>
+                </div>
               </Card.Body>
             </Card>
           </a>
@@ -261,7 +333,11 @@ export default function Portfolio() {
                 >
                   <OverlayTrigger
                     placement="bottom"
-                    overlay={<Tooltip>Live Application</Tooltip>}
+                    overlay={
+                      <Tooltip className="custom-tooltip">
+                        Live Application
+                      </Tooltip>
+                    }
                   >
                     <a href={project.link} target="_blank">
                       <img
@@ -272,7 +348,9 @@ export default function Portfolio() {
                   </OverlayTrigger>
                   <OverlayTrigger
                     placement="bottom"
-                    overlay={<Tooltip>Repository</Tooltip>}
+                    overlay={
+                      <Tooltip className="custom-tooltip">Repository</Tooltip>
+                    }
                   >
                     <a href={project.repository} target="_blank">
                       <img

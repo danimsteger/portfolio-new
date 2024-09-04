@@ -11,9 +11,14 @@
 }
 
 * {
-  background-color: var(--lightmint);
-  color: var(--charcoal);
+  /* background-color: var(--lightmint);
+  color: var(--charcoal); */
   font-family: "Averia Serif Libre", serif;
+}
+
+.custom-tooltip .tooltip-inner {
+  background-color: var(--darkgreen);
+  color: var(--lightmint);
 }
 
 .nav-underline .nav-link.active {

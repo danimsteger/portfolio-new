@@ -97,7 +97,7 @@ export default function Portfolio() {
       >
         <h1 style={{ textAlign: "center" }}>Portfolio</h1>
         <Col xl={4} style={{}}>
-          <a href={projects[0].link} target="_blank">
+          <a href={projects[0].link} target="_blank" className="major-project">
             <Card style={{ border: "none" }}>
               <Card.Img variant="top" src={projects[0].image} />
               <Card.Body style={{ textAlign: "center" }}>

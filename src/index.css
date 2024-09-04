@@ -87,6 +87,14 @@ a:hover {
   text-decoration: none;
 }
 
+.major-project {
+  text-decoration: none !;
+}
+
+.major-project:hover {
+  text-decoration: none !;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

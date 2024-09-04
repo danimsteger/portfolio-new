@@ -13,7 +13,7 @@
 * {
   background-color: var(--lightmint);
   color: var(--charcoal);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .nav-underline .nav-link.active {
@@ -44,11 +44,11 @@
   border: none!;
 }
 
-.card-img-top:hover {
+/* .card-img-top:hover {
   border: solid var(--lightmint) 5px;
   border-radius: 20px;
   box-shadow: inset 0px 0px 20px var(--charcoal), 0 0 15px var(--charcoal);
-}
+} */
 
 .card-footer {
   background-color: var(--mint) !;
@@ -71,6 +71,22 @@
   color: var(--mauve) !;
   font-weight: bold;
 }
+
+.carousel-indicators {
+  background-color: transparent;
+}
+
+p {
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

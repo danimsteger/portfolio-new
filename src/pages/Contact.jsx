@@ -1,23 +1,23 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from "../utils/helpers";
 
 export default function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [nameError, setNameError] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [messageError, setMessageError] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [messageError, setMessageError] = useState("");
 
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === 'name') {
+    if (inputType === "name") {
       setName(inputValue);
-    } else if (inputType === 'email') {
+    } else if (inputType === "email") {
       setEmail(inputValue);
     } else {
       setMessage(inputValue);
@@ -25,19 +25,19 @@ export default function Contact() {
   };
 
   const handleNameFocus = () => {
-    setNameError('');
+    setNameError("");
   };
 
   const handleEmailFocus = () => {
-    setEmailError('');
+    setEmailError("");
   };
 
   const handleMessageFocus = () => {
-    setMessageError('');
+    setMessageError("");
   };
 
   const handleNameBlur = () => {
-    if (name.trim() === '') {
+    if (name.trim() === "") {
       setNameError(true);
     } else {
       setNameError(false);
@@ -45,7 +45,7 @@ export default function Contact() {
   };
 
   const handleEmailBlur = () => {
-    if (email.trim() === '' || !validateEmail(email)) {
+    if (email.trim() === "" || !validateEmail(email)) {
       setEmailError(true);
     } else {
       setEmailError(false);
@@ -53,7 +53,7 @@ export default function Contact() {
   };
 
   const handleMessageBlur = () => {
-    if (message.trim() === '') {
+    if (message.trim() === "") {
       setMessageError(true);
     } else {
       setMessageError(false);
@@ -63,9 +63,9 @@ export default function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    setName('');
-    setEmail('');
-    setMessage('');
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -108,7 +108,7 @@ export default function Contact() {
               onBlur={handleMessageBlur}
             ></textarea>
             <button type="submit" className="btn btn-secondary my-3">
-              Submit
+              <a href="mailto:dmsteger217@gmail.com? ">Submit</a>
             </button>
             {nameError && (
               <div>

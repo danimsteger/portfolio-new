@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="Footer fixed-bottom  ">
+    <footer className="Footer   ">
       <ul className="nav justify-content-center p-4">
         <li className="">
           <a
@@ -22,12 +22,12 @@ function Footer() {
           </a>
         </li>
         <li>
-          {' '}
+          {" "}
           <a
             href="mailto:daniellestegertutoring@gmail.com"
             className="nav-link footer-link"
           >
-            {' '}
+            {" "}
             Email
           </a>
         </li>

@@ -1,4 +1,5 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 function Header() {
   const currentPage = useLocation().pathname;
@@ -10,29 +11,58 @@ function Header() {
       </div>
       <ul className="nav nav-underline mx-5">
         <li className="nav-item ">
-          <Link
+          {/* <Link
             to="/About"
             className={
-              currentPage === '/' || currentPage === '/About'
-                ? 'nav-link active'
-                : 'nav-link'
+              currentPage === "/" || currentPage === "/About"
+                ? "nav-link active"
+                : "nav-link"
             }
           >
             About Me
-          </Link>
+          </Link> */}
+
+          <ScrollLink
+            to="about-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className={
+              currentPage === "/" || currentPage === "/About"
+                ? "nav-link active"
+                : "nav-link"
+            }
+          >
+            About
+          </ScrollLink>
         </li>
 
         <li className="nav-item">
-          <Link
+          {/* <Link
             to="/Portfolio"
             className={
-              currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'
+              currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
             }
           >
             Portfolio
-          </Link>
+          </Link> */}
+          <ScrollLink
+            to="portfolio-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className={
+              currentPage === "/" || currentPage === "/Portfolio"
+                ? "nav-link active"
+                : "nav-link"
+            }
+          >
+            Portfolio
+          </ScrollLink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link
             to="/Contact"
             className={
@@ -41,16 +71,30 @@ function Header() {
           >
             Contact
           </Link>
-        </li>
+        </li> */}
         <li className="nav-item">
-          <Link
+          {/* <Link
             to="/Resume"
             className={
-              currentPage === '/Resume' ? 'nav-link active' : 'nav-link'
+              currentPage === "/Resume" ? "nav-link active" : "nav-link"
             }
           >
             Resume
-          </Link>
+          </Link> */}
+          <ScrollLink
+            to="resume-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className={
+              currentPage === "/" || currentPage === "/Resume"
+                ? "nav-link active"
+                : "nav-link"
+            }
+          >
+            Resume
+          </ScrollLink>
         </li>
       </ul>
     </div>

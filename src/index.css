@@ -85,19 +85,19 @@ p {
   font-size: 1.5rem;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .major-project {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .major-project:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .averia-light {
@@ -185,7 +185,7 @@ p {
 }
 
 .experiences-header {
-  background-color: var(--darkgreen);
+  background-color: var(--darkgreen) !important;
 }
 
 .experiences-body {

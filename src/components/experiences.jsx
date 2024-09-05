@@ -23,7 +23,7 @@ export default function Experiences() {
     }
   };
   return (
-    <div style={{ margin: 100 }}>
+    <div style={{ margin: 100 }} id="experience-section">
       <h1 style={{ textAlign: "center", margin: 40 }}>
         Education and Experiences
       </h1>

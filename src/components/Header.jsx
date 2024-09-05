@@ -48,6 +48,19 @@ function Header() {
             Portfolio
           </ScrollLink>
         </li>
+        <li className="nav-item">
+          <ScrollLink
+            to="experience-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            activeClass="active"
+            className="nav-link"
+          >
+            Experience
+          </ScrollLink>
+        </li>
 
         <li className="nav-item">
           <ScrollLink

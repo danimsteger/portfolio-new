@@ -2,10 +2,11 @@ import Portfolio from "./Portfolio";
 import { Row, Col } from "react-bootstrap";
 
 import Resume2 from "./Resume2";
+import Experiences from "../components/experiences";
 
 export default function About() {
   return (
-    <div className="">
+    <div style={{ paddingTop: 200 }}>
       <h1 className="text-center" id="about-section">
         {" "}
         About{" "}
@@ -49,6 +50,7 @@ export default function About() {
         </Col>
       </Row>
       <Portfolio></Portfolio>
+      <Experiences></Experiences>
       <Resume2></Resume2>
     </div>
   );

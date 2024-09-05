@@ -16,7 +16,7 @@ const projects = [
     name: "Beat Bound 🎧",
     description: "Full Stack Application",
     languages: "JavaScript, Node.js, Express.js, MongoDB, GraphQL, Ant Design",
-    link: "https://tech-blog-4o3v.onrender.com",
+    link: "https://beat-bound.onrender.com/",
     repository: "https://github.com/danimsteger/beat-bound?tab=readme-ov-file",
     image: "./assets/beatbound1.png",
   },
@@ -84,7 +84,7 @@ export default function Portfolio() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "var(--mint)",
+    backgroundColor: "transparent",
     color: "var(--mint)",
     border: "none",
     cursor: "pointer",
@@ -119,9 +119,19 @@ export default function Portfolio() {
         <h1 style={{ textAlign: "center" }}>Portfolio</h1>
         <Col xl={4} style={{}}>
           <a href={projects[0].link} target="_blank" className="major-project">
-            <Card style={{ border: "none" }}>
-              <Card.Img variant="top" src={projects[0].image} />
-              <Card.Body style={{ textAlign: "center" }}>
+            <Card className="project-card-main">
+              <Card.Img
+                variant="top"
+                src={projects[0].image}
+                style={{ borderRadius: "10px 10px 0 0" }}
+              />
+              <Card.Body
+                style={{
+                  textAlign: "center",
+                  backgroundColor: "var(--darkgreen)",
+                  color: "var(--lightmint)",
+                }}
+              >
                 <Card.Title style={{ fontSize: "1.75rem" }}>
                   {projects[0].name}
                 </Card.Title>
@@ -141,13 +151,13 @@ export default function Portfolio() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    backgroundColor: "var(--mint)",
+                    backgroundColor: "var(--darkgreen)",
                   }}
                 >
                   <OverlayTrigger
-                    placement="bottom"
+                    placement="left"
                     overlay={
-                      <Tooltip className="custom-tooltip">
+                      <Tooltip className="custom-tooltip2">
                         Live Application
                       </Tooltip>
                     }
@@ -160,9 +170,9 @@ export default function Portfolio() {
                     </a>
                   </OverlayTrigger>
                   <OverlayTrigger
-                    placement="bottom"
+                    placement="right"
                     overlay={
-                      <Tooltip className="custom-tooltip">Repository</Tooltip>
+                      <Tooltip className="custom-tooltip2">Repository</Tooltip>
                     }
                   >
                     <a href={projects[0].repository} target="_blank">
@@ -185,16 +195,33 @@ export default function Portfolio() {
           }}
         >
           <div style={{ fontSize: "1.25rem", textAlign: "center" }}>
-            Beat Bound 🎧 and ReelTime 🎬 were two of the major collaborative
-            projects that I completed as part of UNCC Coding Boot Camp. They are
-            both full stack, interactive web applications.
+            <p>
+              Beat Bound 🎧 and ReelTime 🎬 were two of the major collaborative
+              projects that I completed as part of UNCC Coding Boot Camp. They
+              are both full stack, interactive web applications. Please be
+              patient.
+            </p>
+            <p>
+              Some of the links to deployed applications take a few moments to
+              load.
+            </p>
           </div>
         </Col>
         <Col xl={4} style={{}}>
           <a href={projects[1].link} target="_blank">
-            <Card style={{ border: "none" }}>
-              <Card.Img variant="top" src={projects[1].image} />
-              <Card.Body style={{ textAlign: "center" }}>
+            <Card className="project-card-main">
+              <Card.Img
+                variant="top"
+                src={projects[1].image}
+                style={{ borderRadius: "10px 10px 0 0" }}
+              />
+              <Card.Body
+                style={{
+                  textAlign: "center",
+                  backgroundColor: "var(--darkgreen)",
+                  color: "var(--lightmint)",
+                }}
+              >
                 <Card.Title style={{ fontSize: "1.75rem" }}>
                   {projects[1].name}
                 </Card.Title>
@@ -212,13 +239,13 @@ export default function Portfolio() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    backgroundColor: "var(--mint)",
+                    backgroundColor: "var(--darkgreen)",
                   }}
                 >
                   <OverlayTrigger
-                    placement="bottom"
+                    placement="left"
                     overlay={
-                      <Tooltip className="custom-tooltip">
+                      <Tooltip className="custom-tooltip2">
                         Live Application
                       </Tooltip>
                     }
@@ -231,9 +258,9 @@ export default function Portfolio() {
                     </a>
                   </OverlayTrigger>
                   <OverlayTrigger
-                    placement="bottom"
+                    placement="right"
                     overlay={
-                      <Tooltip className="custom-tooltip">Repository</Tooltip>
+                      <Tooltip className="custom-tooltip2">Repository</Tooltip>
                     }
                   >
                     <a href={projects[1].repository} target="_blank">
@@ -253,34 +280,32 @@ export default function Portfolio() {
       <Row
         style={{ display: "flex", justifyContent: "center", marginTop: 100 }}
       >
-        <h4 style={{ textAlign: "center" }}>Additional assignments: </h4>
+        <h4 style={{ textAlign: "center" }}>Additional Assignments </h4>
         <Carousel
-          style={{
-            width: "65%",
-            justifyContent: "center",
-            backgroundColor: "transparent",
-          }}
+          // style={{
+          //   width: "65%",
+          //   justifyContent: "center",
+          //   backgroundColor: "transparent",
+          // }}
+          className="carousel-projects"
         >
-          {/* {projects.map((project) => (
-          <CarouselProject key={project.id} />
-        ))} */}
           {projects.map((project) => (
             <Carousel.Item
               key={project.id}
-              style={{ backgroundColor: "transparent" }}
+              style={{ backgroundColor: "var(--mint)", borderRadius: 25 }}
             >
               <a href={project.link} target="_blank">
                 <img
                   src={project.image}
                   className="d-block w-100"
                   alt={project.name}
-                  style={{ borderRadius: 20 }}
+                  style={{ borderRadius: 25 }}
                 />
               </a>
               <Carousel.Caption style={{ backgroundColor: "transparent" }}>
                 <h3
                   style={{
-                    color: "var(--darkpurple)",
+                    color: "var(--darkgreen)",
                     backgroundColor: "transparent",
                   }}
                 >
@@ -288,17 +313,25 @@ export default function Portfolio() {
                 </h3>
                 <p
                   className="text-center"
-                  style={{ backgroundColor: "transparent" }}
+                  style={{
+                    backgroundColor: "transparent",
+                    color: "var(--darkgreen)",
+                  }}
                 >
                   {project.description}
                 </p>
                 <p
                   className="text-center"
-                  style={{ backgroundColor: "transparent" }}
+                  style={{
+                    backgroundColor: "transparent",
+                  }}
                 >
                   <small
-                    className="text-body-secondary"
-                    style={{ backgroundColor: "transparent", margin: 5 }}
+                    style={{
+                      backgroundColor: "transparent",
+                      margin: 50,
+                      color: "var(--darkgreen)",
+                    }}
                   >
                     {project.languages}
                   </small>

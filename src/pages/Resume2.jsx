@@ -6,7 +6,13 @@ export default function Resume2() {
       <h1 style={{ textAlign: "center", marginTop: 100, marginBottom: 50 }}>
         Resume
       </h1>
-      <Row style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <Row
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          marginBottom: 500,
+        }}
+      >
         <Col xl={4} style={{ textAlign: "center" }}>
           <h3>Front-End Proficiences </h3>
           <div style={{ display: "flex", justifyContent: "center" }}>

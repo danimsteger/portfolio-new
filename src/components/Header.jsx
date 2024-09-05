@@ -1,97 +1,63 @@
 import { Link, useLocation } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink, Element } from "react-scroll";
 
 function Header() {
   const currentPage = useLocation().pathname;
 
   return (
-    <div className="navbar container-fluid">
+    <div
+      className="navbar container-fluid"
+      style={{
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        zIndex: 100,
+        backgroundColor: "var(--darkgreen)",
+      }}
+    >
       <div>
-        <a className="navbar-brand mx-5">Danielle Steger</a>
+        <a className="navbar-brand mx-5" style={{ color: "var(--mint)" }}>
+          Danielle Steger
+        </a>
       </div>
       <ul className="nav nav-underline mx-5">
         <li className="nav-item ">
-          {/* <Link
-            to="/About"
-            className={
-              currentPage === "/" || currentPage === "/About"
-                ? "nav-link active"
-                : "nav-link"
-            }
-          >
-            About Me
-          </Link> */}
-
           <ScrollLink
             to="about-section"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            className={
-              currentPage === "/" || currentPage === "/About"
-                ? "nav-link active"
-                : "nav-link"
-            }
+            activeClass="active"
+            className="nav-link"
           >
             About
           </ScrollLink>
         </li>
 
         <li className="nav-item">
-          {/* <Link
-            to="/Portfolio"
-            className={
-              currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
-            }
-          >
-            Portfolio
-          </Link> */}
           <ScrollLink
             to="portfolio-section"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            className={
-              currentPage === "/" || currentPage === "/Portfolio"
-                ? "nav-link active"
-                : "nav-link"
-            }
+            activeClass="active"
+            className="nav-link"
           >
             Portfolio
           </ScrollLink>
         </li>
-        {/* <li className="nav-item">
-          <Link
-            to="/Contact"
-            className={
-              currentPage === '/Contact' ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Contact
-          </Link>
-        </li> */}
+
         <li className="nav-item">
-          {/* <Link
-            to="/Resume"
-            className={
-              currentPage === "/Resume" ? "nav-link active" : "nav-link"
-            }
-          >
-            Resume
-          </Link> */}
           <ScrollLink
             to="resume-section"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            className={
-              currentPage === "/" || currentPage === "/Resume"
-                ? "nav-link active"
-                : "nav-link"
-            }
+            activeClass="active"
+            className="nav-link"
           >
             Resume
           </ScrollLink>

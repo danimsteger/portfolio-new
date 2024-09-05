@@ -22,11 +22,11 @@
 }
 
 .nav-underline .nav-link.active {
-  color: var(--deeppurple);
+  color: var(--lightmint);
 }
 
 .nav-underline .nav-link {
-  color: var(--lightpurple);
+  color: var(--mint);
 }
 
 .nav-underline:hover .nav-link:hover {
@@ -146,6 +146,110 @@ p {
   background-color: var(--mint);
   color: var(--charcoal);
 }
+
+.project-card-main {
+  border: 10px solid var(--darkgreen);
+  border-radius: 25px;
+  transition: box-shadow 0.3s; /* Add a transition for smooth effect */
+
+  /* Initial box shadow */
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* No shadow initially */
+
+  /* Add shadow on hover */
+  &:hover {
+    box-shadow: 0 0 30px 5px rgba(9, 58, 62, 0.5); /* Adjust the values for the shadow effect */
+  }
+}
+
+.carousel-projects {
+  background-color: var(--mint);
+  width: 65%;
+  justify-content: center;
+  background-color: transparent;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+
+  border-radius: 25px;
+
+  &:hover {
+    box-shadow: 0 0 30px 5px rgba(9, 58, 62, 0.5); /* Adjust the values for the shadow effect */
+  }
+}
+
+.carousel {
+  background-color: var(--mint);
+}
+.custom-tooltip2 .tooltip-inner {
+  background-color: var(--mint);
+  color: var(--darkgreen);
+}
+
+.experiences-header {
+  background-color: var(--darkgreen);
+}
+
+.experiences-body {
+  background-color: var(--mint);
+  color: var(--darkgreen);
+}
+
+/* .custom-tooltip2 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: purple; 
+  color: #fff; 
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+} */
+
+/* .custom-tooltip2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: purple transparent transparent transparent;
+}
+
+.custom-tooltip2:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+} */
+
+.custom-tooltip2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--mint) transparent; /* Change the color of the arrow here */
+  filter: invert(1); /* Invert the color to match the custom color */
+}
+/* 
+.custom-tooltip2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: purple transparent transparent transparent; 
+}
+
+.custom-tooltip2 .tooltiptext::after {
+  border-color: var(--mint) transparent transparent transparent;
+} */
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

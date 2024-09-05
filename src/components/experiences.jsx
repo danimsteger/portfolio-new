@@ -31,7 +31,7 @@ export default function Experiences() {
         <Card.Header className="experiences-header">
           <Nav
             variant="pills"
-            defaultActiveKey=""
+            defaultActiveKey="first"
             style={{
               display: "flex",
               justifyContent: "center",

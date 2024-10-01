@@ -148,7 +148,7 @@ p {
 }
 
 .project-card-main {
-  border: 10px solid var(--darkgreen);
+  border: 10px solid var(--darkgreen) !important;
   border-radius: 25px;
   transition: box-shadow 0.3s; /* Add a transition for smooth effect */
 
@@ -163,7 +163,7 @@ p {
 
 .carousel-projects {
   background-color: var(--mint);
-  width: 65%;
+  width: 65% !important;
   justify-content: center;
   background-color: transparent;
   transition: box-shadow 0.3s;

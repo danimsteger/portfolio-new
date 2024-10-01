@@ -143,8 +143,8 @@ p {
 }
 
 .list-group {
-  background-color: var(--mint);
-  color: var(--charcoal);
+  background-color: var(--mint) !important;
+  color: var(--charcoal) !important;
 }
 
 .project-card-main {

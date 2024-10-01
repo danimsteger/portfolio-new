@@ -39,7 +39,7 @@ function Footer() {
             href="https://www.linkedin.com/in/daniellesteger217/"
             target="_blank"
           >
-            <img src="./assets/linkedin.png" style={circleButtonStyle} />
+            <img src="./assets/linkedin1.png" style={circleButtonStyle} />
           </a>
         </OverlayTrigger>
         <OverlayTrigger

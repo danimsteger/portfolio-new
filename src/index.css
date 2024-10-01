@@ -26,7 +26,7 @@
 }
 
 .nav-underline .nav-link {
-  color: var(--mint);
+  color: var(--mint) !important;
 }
 
 .nav-underline:hover .nav-link:hover {
@@ -43,7 +43,7 @@
 
 .project-button:hover,
 .project-button-link:hover {
-  background-color: var(--lightmint) !;
+  background-color: var(--lightmint) !important;
   color: var(--charcoal) !;
   text-decoration: none!;
   border: none!;

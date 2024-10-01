@@ -22,7 +22,7 @@
 }
 
 .nav-underline .nav-link.active {
-  color: var(--lightmint);
+  color: var(--lightmint) !important;
 }
 
 .nav-underline .nav-link {
@@ -30,7 +30,7 @@
 }
 
 .nav-underline:hover .nav-link:hover {
-  color: var(--darkpurple) !;
+  color: var(--lightmint) !important;
 }
 
 .project-button,
@@ -149,7 +149,7 @@ p {
 
 .project-card-main {
   border: 10px solid var(--darkgreen) !important;
-  border-radius: 25px;
+  border-radius: 25px !important;
   transition: box-shadow 0.3s; /* Add a transition for smooth effect */
 
   /* Initial box shadow */

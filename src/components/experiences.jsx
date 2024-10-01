@@ -1,7 +1,7 @@
 import { Card, Nav, Image, Button } from "react-bootstrap";
 import React, { useState } from "react";
 export default function Experiences() {
-  const [selectedTab, setSelectedTab] = useState(null);
+  const [selectedTab, setSelectedTab] = useState("first");
   const handleTabClick = (tabId) => {
     setSelectedTab(tabId);
     console.log(`clicked on tab: ${tabId}`);

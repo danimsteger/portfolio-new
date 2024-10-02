@@ -31,7 +31,7 @@ export default function Background() {
     () => ({
       background: {
         color: {
-          value: "#f4e1e0",
+          value: "#e5c5c1",
         },
         opacity: 0.9,
       },
@@ -59,7 +59,7 @@ export default function Background() {
       },
       particles: {
         color: {
-          value: "#e5c5c1",
+          value: "#f4e1e0",
         },
         links: {
           color: "#ffffff",

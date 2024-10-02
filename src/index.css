@@ -18,7 +18,7 @@
   --apricot: #f09367;
   --coppertulip: #ce5a43;
   --copperrust: #8c4646;
-  --buccaneer: #592828;
+  --buccaneer: #5f3d3d;
 }
 
 * {
@@ -33,6 +33,51 @@
   font-style: normal;
 }
 
+#about-section {
+  position: relative;
+  z-index: 1;
+}
+.headers {
+  text-align: center;
+  color: var(--jasper);
+  margin-bottom: 20px;
+  font-size: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.add-assign {
+  text-align: center;
+  color: var(--copperrust);
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-p {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 50px;
+  color: var(--buccaneer);
+}
+
+.section {
+  padding-top: 200px;
+}
+
+.alt-background {
+  position: relative;
+  z-index: 1;
+  background-color: var(--blush);
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--copperrust);
+}
 .custom-tooltip .tooltip-inner {
   background-color: var(--darkgreen);
   color: var(--lightmint);
@@ -165,7 +210,7 @@ p {
 }
 
 .project-card-main {
-  border: 10px solid var(--darkgreen) !important;
+  border: 10px solid var(--buccaneer) !important;
   border-radius: 25px !important;
   transition: box-shadow 0.3s; /* Add a transition for smooth effect */
 
@@ -174,13 +219,13 @@ p {
 
   /* Add shadow on hover */
   &:hover {
-    box-shadow: 0 0 30px 5px rgba(9, 58, 62, 0.5); /* Adjust the values for the shadow effect */
+    box-shadow: 0 0 30px 5px rgba(104, 39, 29, 0.5); /* Adjust the values for the shadow effect */
   }
 }
 
 .carousel-projects {
-  background-color: var(--mint);
-  width: 65% !important;
+  background-color: var(--jasper);
+  width: 45% !important;
   justify-content: center;
   background-color: transparent;
   transition: box-shadow 0.3s;
@@ -189,25 +234,56 @@ p {
   border-radius: 25px;
 
   &:hover {
-    box-shadow: 0 0 30px 5px rgba(9, 58, 62, 0.5); /* Adjust the values for the shadow effect */
+    box-shadow: 0 0 30px 5px rgba(139, 69, 79, 0.5); /* Adjust the values for the shadow effect */
+  }
+}
+.carousel-pic {
+  opacity: 0.9;
+}
+@media (max-width: 1250px) {
+  .carousel-projects {
+    width: 90% !important; /* Change the width to 90% for small screens */
+  }
+
+  .carousel-pic {
+    opacity: 0.5;
+  }
+
+  .caption-title {
+    color: var(--buccaneer) !important;
   }
 }
 
+@media (max-width: 2100px) {
+  .carousel-pic {
+    opacity: 0.5;
+  }
+  .carousel-projects {
+    width: 60% !important; /* Change the width to 90% for small screens */
+  }
+  .caption-title {
+    color: var(--buccaneer) !important;
+  }
+}
 .carousel {
-  background-color: var(--mint);
+  background-color: var(--jasper);
 }
 .custom-tooltip2 .tooltip-inner {
-  background-color: var(--mint);
-  color: var(--darkgreen);
+  background-color: var(--pink);
+  color: var(--buccaneer);
 }
 
 .experiences-header {
-  background-color: var(--darkgreen) !important;
+  background-color: var(--copperrust) !important;
+}
+
+.experiences-card {
+  width: 70%;
 }
 
 .experiences-body {
-  background-color: var(--mint);
-  color: var(--darkgreen);
+  background-color: var(--blush);
+  color: var(--buccaneer);
 }
 
 .intro {
@@ -232,7 +308,7 @@ p {
 
 .intro-title {
   font-size: 3rem;
-  color: var(--copperrust);
+  color: var(--apricot);
   text-align: left;
 }
 
@@ -275,8 +351,33 @@ p {
   left: 50%;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent var(--mint) transparent; /* Change the color of the arrow here */
+  border-color: transparent transparent var(--blush) transparent; /* Change the color of the arrow here */
   filter: invert(1); /* Invert the color to match the custom color */
+}
+
+.head {
+  color: var(--jasper);
+  font-size: 2.25rem;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.head2 {
+  color: var(--copperrust);
+  font-size: 1.75rem;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.head3 {
+  color: var(--copperrust);
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+.bodyy {
+  padding: 20px;
 }
 /* 
 .custom-tooltip2 .tooltiptext::after {
@@ -361,3 +462,110 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}

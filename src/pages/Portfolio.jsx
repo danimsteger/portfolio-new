@@ -18,7 +18,7 @@ const projects = [
     languages: "JavaScript, Node.js, Express.js, MongoDB, GraphQL, Ant Design",
     link: "https://beat-bound.onrender.com/",
     repository: "https://github.com/danimsteger/beat-bound?tab=readme-ov-file",
-    image: "./assets/beatbound1.png",
+    image: "./assets/beat.png",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const projects = [
     languages: "JavaScript, Node.js, Express.js, Sequelize, Handlebars.js",
     link: "https://movie-app-uu6k.onrender.com/",
     repository: "https://github.com/danimsteger/movie-app",
-    image: "./assets/reel1.png",
+    image: "./assets/movie.png",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const projects = [
     languages: "JavaScript, Node.js, Express.js, Sequelize, Handlebars.js",
     link: "https://tech-blog-4o3v.onrender.com",
     repository: "https://github.com/danimsteger/tech-blog",
-    image: "./assets/multi.png",
+    image: "./assets/tech.png",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const projects = [
     languages: "HTML, CSS, JavaScript, jQuery, dayjs, Bootstrap",
     link: "https://danimsteger.github.io/weather-dashboard",
     repository: "https://github.com/danimsteger/weather-dashboard",
-    image: "./assets/weater1.png",
+    image: "./assets/weather.png",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const projects = [
     languages: "JavaScript, HTML, jQuery, Bulma",
     link: "https://danimsteger.github.io/motivaction/",
     repository: "https://github.com/danimsteger/motivaction",
-    image: "./assets/motiv11.png",
+    image: "./assets/motivaction.png",
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const projects = [
     languages: "JavaScript, SQL, Express.js, Node.js, Inquirer",
     link: "https://drive.google.com/file/d/1r6mD8iPLumYyfLTntgI6QW7Ca7gprsKV/view?pli=1",
     repository: "https://github.com/danimsteger/sql-employee-tracker",
-    image: "./assets/employee1.png",
+    image: "./assets/employee.png",
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const projects = [
     languages: "JavaScript, HTML, CSS",
     link: "https://danimsteger.github.io/my-blog/",
     repository: "https://github.com/danimsteger/my-blog",
-    image: "./assets/speech1.png",
+    image: "./assets/blog.png",
   },
 ];
 
@@ -92,17 +92,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div
-      id="portfolio-section"
-      style={
-        {
-          // display: "flex",
-          // justifyContent: "center",
-          // margin: 50,
-          // flexDirection: "row",
-        }
-      }
-    >
+    <div id="portfolio-section" className="section">
       {/* <h1 className="text-center"> Portfolio</h1>
       <div className="card-group">
         {projects.map((project) => (
@@ -116,7 +106,7 @@ export default function Portfolio() {
           marginTop: 100,
         }}
       >
-        <h1 style={{ textAlign: "center" }}>Portfolio</h1>
+        <h1 className="headers calistoga-regular">Portfolio</h1>
         <Col xl={4} style={{}}>
           <a href={projects[0].link} target="_blank" className="major-project">
             <Card className="project-card-main">
@@ -128,14 +118,16 @@ export default function Portfolio() {
               <Card.Body
                 style={{
                   textAlign: "center",
-                  backgroundColor: "var(--darkgreen)",
-                  color: "var(--lightmint)",
+                  backgroundColor: "var(--buccaneer)",
+                  color: "var(--blush)",
                 }}
               >
-                <Card.Title style={{ fontSize: "1.75rem" }}>
+                <Card.Title
+                  style={{ fontSize: "2rem", color: "var(--peachfuzz)" }}
+                >
                   {projects[0].name}
                 </Card.Title>
-                <Card.Text style={{ fontSize: "1rem" }}>
+                <Card.Text style={{ fontSize: "1.25rem" }}>
                   A full-stack web application designed for music enthusiasts to
                   search, save, and explore songs, artists, and events through
                   the integration of Spotify and Ticketmaster APIs. The
@@ -151,7 +143,7 @@ export default function Portfolio() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    backgroundColor: "var(--darkgreen)",
+                    backgroundColor: "var(--buccaneer)",
                   }}
                 >
                   <OverlayTrigger
@@ -194,7 +186,13 @@ export default function Portfolio() {
             alignItems: "center",
           }}
         >
-          <div style={{ fontSize: "1.25rem", textAlign: "center" }}>
+          <div
+            style={{
+              fontSize: "1.5rem",
+              textAlign: "center",
+              color: "var(--buccaneer)",
+            }}
+          >
             <p>
               Beat Bound 🎧 and ReelTime 🎬 were two of the major collaborative
               projects that I completed as part of UNCC Coding Boot Camp. They
@@ -218,14 +216,16 @@ export default function Portfolio() {
               <Card.Body
                 style={{
                   textAlign: "center",
-                  backgroundColor: "var(--darkgreen)",
-                  color: "var(--lightmint)",
+                  backgroundColor: "var(--buccaneer)",
+                  color: "var(--blush)",
                 }}
               >
-                <Card.Title style={{ fontSize: "1.75rem" }}>
+                <Card.Title
+                  style={{ fontSize: "2rem", color: "var(--peachfuzz)" }}
+                >
                   {projects[1].name}
                 </Card.Title>
-                <Card.Text style={{ fontSize: "1rem" }}>
+                <Card.Text style={{ fontSize: "1.25rem" }}>
                   A dynamic social media web application created for movie
                   enthusiasts to explore, review, and share opinions on films.
                   The project features a responsive and visually appealing
@@ -239,7 +239,7 @@ export default function Portfolio() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    backgroundColor: "var(--darkgreen)",
+                    backgroundColor: "var(--buccaneer)",
                   }}
                 >
                   <OverlayTrigger
@@ -280,7 +280,9 @@ export default function Portfolio() {
       <Row
         style={{ display: "flex", justifyContent: "center", marginTop: 100 }}
       >
-        <h4 style={{ textAlign: "center" }}>Additional Assignments </h4>
+        <h4 className="add-assign calistoga-regular">
+          Additional Assignments{" "}
+        </h4>
         <Carousel
           // style={{
           //   width: "65%",
@@ -292,20 +294,21 @@ export default function Portfolio() {
           {projects.map((project) => (
             <Carousel.Item
               key={project.id}
-              style={{ backgroundColor: "var(--mint)", borderRadius: 25 }}
+              style={{ backgroundColor: "var(--jasper)", borderRadius: 25 }}
             >
               <a href={project.link} target="_blank">
                 <img
                   src={project.image}
-                  className="d-block w-100"
+                  className="d-block w-100 carousel-pic"
                   alt={project.name}
                   style={{ borderRadius: 25 }}
                 />
               </a>
               <Carousel.Caption style={{ backgroundColor: "transparent" }}>
                 <h3
+                  className="caption-title"
                   style={{
-                    color: "var(--darkgreen)",
+                    color: "var(--pink)",
                     backgroundColor: "transparent",
                   }}
                 >
@@ -315,7 +318,7 @@ export default function Portfolio() {
                   className="text-center"
                   style={{
                     backgroundColor: "transparent",
-                    color: "var(--darkgreen)",
+                    color: "var(--buccaneer)",
                   }}
                 >
                   {project.description}
@@ -330,7 +333,7 @@ export default function Portfolio() {
                     style={{
                       backgroundColor: "transparent",
                       margin: 50,
-                      color: "var(--darkgreen)",
+                      color: "var(--buccaneer)",
                     }}
                   >
                     {project.languages}
@@ -361,7 +364,7 @@ export default function Portfolio() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    backgroundColor: "var(--mint)",
+                    backgroundColor: "var(--jasper)",
                   }}
                 >
                   <OverlayTrigger

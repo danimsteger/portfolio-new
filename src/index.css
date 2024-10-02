@@ -8,12 +8,29 @@
   --mint: #bacec8;
   --charcoal: #404e5c;
   --lightpurple: #af9ab2;
+  --navy: #0e1627;
+  --mauve2: #bd8e89;
+  --pink: #e5c5c1;
+  --blush: #f4e1e0;
+  --prune: #7f6269;
+  --peachfuzz: #ffbe98;
+  --jasper: #db6856;
+  --apricot: #f09367;
+  --coppertulip: #ce5a43;
+  --copperrust: #8c4646;
+  --buccaneer: #592828;
 }
 
 * {
   /* background-color: var(--lightmint);
   color: var(--charcoal); */
   font-family: "Averia Serif Libre", serif;
+}
+
+.calistoga-regular {
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .custom-tooltip .tooltip-inner {
@@ -191,6 +208,32 @@ p {
 .experiences-body {
   background-color: var(--mint);
   color: var(--darkgreen);
+}
+
+.intro {
+  margin: 100px;
+  padding: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-text {
+  color: var(--copperrust);
+
+  font-size: 2rem;
+  text-align: left;
+}
+
+.intro-name {
+  font-size: 6rem;
+  color: var(--jasper);
+  text-align: left;
+}
+
+.intro-title {
+  font-size: 3rem;
+  color: var(--copperrust);
+  text-align: left;
 }
 
 /* .custom-tooltip2 .tooltiptext {

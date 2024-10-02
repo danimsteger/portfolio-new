@@ -9,7 +9,7 @@ function App() {
   // const [count, setCount] = useState(0);
 
   return (
-    <div style={{ backgroundColor: "var(--lightmint)" }}>
+    <div>
       <Header />
 
       <main className="mx-3" style={{}}>

@@ -9,6 +9,7 @@ import Contact from "./pages/Contact.jsx";
 import Resume from "./pages/Resume.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Error from "./pages/Error.jsx";
+import Home from "./pages/Home.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -19,11 +20,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <About />,
+        element: <Home />,
       },
       {
         path: "/About",
-        element: <About />,
+        element: <Home />,
       },
       {
         path: "/Portfolio",

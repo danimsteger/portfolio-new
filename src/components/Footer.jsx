@@ -8,8 +8,8 @@ function Footer() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "var(--mint)",
-    color: "var(--mint)",
+    backgroundColor: "var(--pink)",
+    color: "var(--peachfuzz)",
     border: "none",
     cursor: "pointer",
     margin: 10,
@@ -20,7 +20,9 @@ function Footer() {
         style={{
           display: "flex",
           justifyContent: "center",
-          backgroundColor: "var(--mint)",
+          backgroundColor: "var(--pink)",
+          position: "relative",
+          zIndex: 1,
         }}
       >
         <OverlayTrigger

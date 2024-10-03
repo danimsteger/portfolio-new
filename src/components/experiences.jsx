@@ -12,8 +12,8 @@ export default function Experiences() {
       return {
         width: "150px",
         height: "150px",
-        border: "4px solid var(--pink)", // Add an outline style when the tab is active
-        boxShadow: "2px 2px 5px var(--pink)",
+        border: "4px solid var(--blush)", // Add an outline style when the tab is active
+        boxShadow: "2px 2px 5px var(--blush)",
       };
     } else {
       return {
@@ -24,8 +24,10 @@ export default function Experiences() {
   };
   return (
     <div style={{ margin: 100 }} id="experience-section" className="section">
-      <h1 className="calistoga-regular headers">Education and Experiences</h1>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <h1 className="calistoga-regular headers experiences-title">
+        Education and Experiences
+      </h1>
+      <div style={{ display: "flex", justifyContent: "end" }}>
         <Card className="experiences-card">
           <Card.Header className="experiences-header">
             <Nav
@@ -103,14 +105,18 @@ export default function Experiences() {
                     <h3 className="head calistoga-regular">
                       University of North Carolina Charlotte Coding Bootcamp
                     </h3>
-                    <h3 className="head2 poppins-semibold">Completed 2024</h3>
+                    <h3 className="head2 montserrat-alternates-bold">
+                      Completed 2024
+                    </h3>
                   </div>
-                  <h5 className="head2 poppins-bold">
+                  <h5 className="head2 montserrat-alternates-bold">
                     Certificate | Full Stack Development
                   </h5>
-                  <h5 className="head3 poppins-semibold">Grade: A+</h5>
+                  <h5 className="head3 montserrat-alternates-semibold">
+                    Grade: A+
+                  </h5>
                 </Card.Title>
-                <Card.Text className="bodyy poppins-regular">
+                <Card.Text className="bodyy montserrat-alternates-regular">
                   Completed a 12-week web development boot camp that provided a
                   comprehensive foundation in both front-end and back-end
                   development. The program offered hands-on experience with
@@ -132,20 +138,26 @@ export default function Experiences() {
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
-                    <h3>Gravatt Camp and Conference Center</h3>
-                    <h3>2014 - 2024</h3>
+                    <h3 className="head calistoga-regular">
+                      Gravatt Camp and Conference Center
+                    </h3>
+                    <h3 className="head2 montserrat-alternates-bold">
+                      2014 - 2024
+                    </h3>
                   </div>
-                  <h5>Aiken, SC</h5>
-                  <h5>
+                  <h5 className="head2 montserrat-alternates-bold">
+                    Aiken, SC
+                  </h5>
+                  <h5 className="head3 montserrat-alternates-semibold">
                     <span style={{ fontWeight: "bold" }}>Full-Time:</span>{" "}
                     Director of Hospitality | Camp Director
                   </h5>
-                  <h5>
+                  <h5 className="head3 montserrat-alternates-semibold">
                     <span style={{ fontWeight: "bold" }}>Seasonal:</span>{" "}
                     Technology Director | Head Counselor | Counselor{" "}
                   </h5>
                 </Card.Title>
-                <Card.Text>
+                <Card.Text className="bodyy montserrat-alternates-regular">
                   My time at Gravatt Camp and Conference Center was a
                   transformative experience that significantly shaped my
                   leadership and organizational skills. Working in a
@@ -167,13 +179,21 @@ export default function Experiences() {
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
-                    <h3>Columbia College - Columbia, SC</h3>
-                    <h3>Completed 2022</h3>
+                    <h3 className="head calistoga-regular">
+                      Columbia College - Columbia, SC
+                    </h3>
+                    <h3 className="head2 montserrat-alternates-bold">
+                      Completed 2022
+                    </h3>
                   </div>
-                  <h5>Master of Arts | Organizational Leadership</h5>
-                  <h5>GPA: 3.95 | Summa Cum Laude</h5>
+                  <h5 className="head2 montserrat-alternates-bold">
+                    Master of Arts | Organizational Leadership
+                  </h5>
+                  <h5 className="head3 montserrat-alternates-semibold">
+                    GPA: 3.95 | Summa Cum Laude
+                  </h5>
                 </Card.Title>
-                <Card.Text>
+                <Card.Text className="bodyy montserrat-alternates-regular">
                   Completed a Master of Arts in Organizational Leadership
                   through a 100% online program designed for working
                   professionals. This intensive program combined real-world
@@ -195,13 +215,19 @@ export default function Experiences() {
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
-                    <h3>Freelance Tutor </h3>
-                    <h3>2016 - Present</h3>
+                    <h3 className="head calistoga-regular">Freelance Tutor </h3>
+                    <h3 className="head2 montserrat-alternates-bold">
+                      2016 - Present
+                    </h3>
                   </div>
-                  <h5>Columbia, SC</h5>
-                  <h5>Tutored by Teachers | Remote</h5>
+                  <h5 className="head2 montserrat-alternates-bold">
+                    Columbia, SC
+                  </h5>
+                  <h5 className="head3 montserrat-alternates-semibold">
+                    Tutored by Teachers | Remote
+                  </h5>
                 </Card.Title>
-                <Card.Text>
+                <Card.Text className="bodyy montserrat-alternates-regular">
                   As a math tutor, I work both online through Tutored by
                   Teachers and freelance with local students, providing
                   personalized instruction that helps bridge learning gaps and
@@ -224,13 +250,19 @@ export default function Experiences() {
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
-                    <h3>Math Teacher</h3>
-                    <h3>2019 - 2023</h3>
+                    <h3 className="head calistoga-regular">Math Teacher</h3>
+                    <h3 className="head2 montserrat-alternates-bold">
+                      2019 - 2023
+                    </h3>
                   </div>
-                  <h5>Richland One School District</h5>
-                  <h5>Columbia, SC</h5>
+                  <h5 className="head2 montserrat-alternates-bold">
+                    Richland One School District
+                  </h5>
+                  <h5 className="head3 montserrat-alternates-semibold">
+                    Columbia, SC
+                  </h5>
                 </Card.Title>
-                <Card.Text>
+                <Card.Text className="bodyy montserrat-alternates-regular">
                   As a seventh-grade math teacher, I taught students across all
                   levels, including advanced courses like Algebra 1, where I
                   developed and implemented differentiated instruction
@@ -251,13 +283,21 @@ export default function Experiences() {
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
-                    <h3>University of South Carolina Honors College</h3>
-                    <h3>2015 - 2019</h3>
+                    <h3 className="head calistoga-regular">
+                      University of South Carolina Honors College
+                    </h3>
+                    <h3 className="head2 montserrat-alternates-bold">
+                      2015 - 2019
+                    </h3>
                   </div>
-                  <h5>Middle Level Education | Mathematics & Social Studies</h5>
-                  <h5>GPA: 3.95 | Summa Cum Laude</h5>
+                  <h5 className="head2 montserrat-alternates-bold">
+                    Middle Level Education | Mathematics & Social Studies
+                  </h5>
+                  <h5 className="head3 montserrat-alternates-semibold">
+                    GPA: 3.95 | Summa Cum Laude
+                  </h5>
                 </Card.Title>
-                <Card.Text>
+                <Card.Text className="bodyy montserrat-alternates-regular">
                   At the University of South Carolina, I studied Middle Level
                   Education in the prestigious Honors College, where I gained a
                   deep understanding of pedagogical theory and best practices

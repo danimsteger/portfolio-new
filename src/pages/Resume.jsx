@@ -1,7 +1,7 @@
 export default function Resume() {
   return (
     <div>
-      <h1 className="text-center"> Resume</h1>
+      <h1 className="text-center calistoga-regular headers"> Resume</h1>
       <div className="m-4">
         <p className="text-center">
           Download a PDF of Danielles Resume&nbsp;

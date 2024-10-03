@@ -31,7 +31,7 @@ export default function Background() {
     () => ({
       background: {
         color: {
-          value: "#e5c5c1",
+          value: "#f2d6ce",
         },
         opacity: 0.9,
       },
@@ -59,7 +59,7 @@ export default function Background() {
       },
       particles: {
         color: {
-          value: "#f4e1e0",
+          value: "#ca8e82",
         },
         links: {
           color: "#ffffff",
@@ -85,14 +85,14 @@ export default function Background() {
           value: 80,
         },
         opacity: {
-          value: 1,
+          value: 0.5,
         },
         shape: {
           type: ["star", "circle"],
           options: {
             star: {
-              sides: 7, // the number of sides of the star
-              inset: 5, // the inset length, 2 is the default and an acceptable value
+              sides: 4, // the number of sides of the star
+              inset: 6, // the inset length, 2 is the default and an acceptable value
             },
           },
         },

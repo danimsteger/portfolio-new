@@ -12,15 +12,18 @@ function Header() {
         top: 0,
         width: "100%",
         zIndex: 100,
-        backgroundColor: "var(--darkgreen)",
+        backgroundColor: "var(--jasper)",
       }}
     >
       <div>
-        <a className="navbar-brand mx-5" style={{ color: "var(--mint)" }}>
-          Danielle Steger
+        <a
+          className="navbar-brand mx-5 calistoga-regular"
+          style={{ color: "var(--peachfuzz)" }}
+        >
+          D M S
         </a>
       </div>
-      <ul className="nav nav-underline mx-5">
+      <ul className="nav nav-underline mx-5 ">
         <li className="nav-item ">
           <ScrollLink
             to="about-section"
@@ -29,7 +32,7 @@ function Header() {
             offset={-70}
             duration={500}
             activeClass="active"
-            className="nav-link"
+            className="nav-link calistoga-regular"
           >
             About
           </ScrollLink>
@@ -43,7 +46,7 @@ function Header() {
             offset={-70}
             duration={500}
             activeClass="active"
-            className="nav-link"
+            className="nav-link calistoga-regular"
           >
             Portfolio
           </ScrollLink>
@@ -56,7 +59,7 @@ function Header() {
             offset={-70}
             duration={500}
             activeClass="active"
-            className="nav-link"
+            className="nav-link calistoga-regular"
           >
             Experience
           </ScrollLink>
@@ -70,9 +73,9 @@ function Header() {
             offset={-70}
             duration={500}
             activeClass="active"
-            className="nav-link"
+            className="nav-link calistoga-regular"
           >
-            Resume
+            Skills
           </ScrollLink>
         </li>
       </ul>

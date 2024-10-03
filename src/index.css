@@ -10,15 +10,15 @@
   --lightpurple: #af9ab2;
   --navy: #0e1627;
   --mauve2: #bd8e89;
-  --pink: #e5c5c1;
-  --blush: #f4e1e0;
-  --prune: #7f6269;
-  --peachfuzz: #ffbe98;
-  --jasper: #db6856;
+  --pink: #ca8e82;
+  --blush: #f2d6ce;
+  --prune: #d9b99f;
+  --peachfuzz: #f2e7dd;
+  --jasper: #a75f37;
   --apricot: #f09367;
   --coppertulip: #ce5a43;
-  --copperrust: #8c4646;
-  --buccaneer: #5f3d3d;
+  --copperrust: #d9b99f;
+  --buccaneer: #292421;
 }
 
 * {
@@ -33,22 +33,31 @@
   font-style: normal;
 }
 
-#about-section {
-  position: relative;
-  z-index: 1;
-}
 .headers {
   text-align: center;
   color: var(--jasper);
   margin-bottom: 20px;
-  font-size: 4rem;
+  font-size: 6rem;
   position: relative;
   z-index: 1;
+}
+#about-section {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+.about-header {
+  text-align: left;
+}
+
+.experiences-title {
+  text-align: right;
 }
 
 .add-assign {
   text-align: center;
-  color: var(--copperrust);
+  color: var(--pink);
   margin-top: 30px;
   margin-bottom: 40px;
   font-size: 3rem;
@@ -57,42 +66,68 @@
 }
 
 .about-p {
-  font-size: 1.75rem;
-  text-align: center;
+  font-size: 1.5rem;
+  text-align: left;
   margin: 50px;
   color: var(--buccaneer);
 }
 
 .section {
   padding-top: 200px;
+  margin-top: 200px;
 }
 
 .alt-background {
   position: relative;
   z-index: 1;
-  background-color: var(--blush);
-  margin-left: 200px;
-  margin-right: 200px;
-  border-radius: 25px;
+  background-color: var(--peachfuzz);
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 100px;
+  margin-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* border-radius: 25px;
   border-style: solid;
   border-width: 10px;
-  border-color: var(--copperrust);
+  border-color: var(--copperrust); */
 }
+
+/* #portfolio-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--peachfuzz);
+
+  padding-left: 100px;
+  padding-right: 100px;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+} */
 .custom-tooltip .tooltip-inner {
-  background-color: var(--darkgreen);
-  color: var(--lightmint);
+  background-color: var(--jasper);
+  color: var(--blush);
 }
 
 .nav-underline .nav-link.active {
-  color: var(--lightmint) !important;
+  color: var(--peachfuzz) !important;
+  text-decoration: underline;
 }
 
 .nav-underline .nav-link {
-  color: var(--mint) !important;
+  color: var(--blush) !important;
 }
 
 .nav-underline:hover .nav-link:hover {
-  color: var(--lightmint) !important;
+  color: var(--peachfuzz) !important;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+}
+
+.nav-item {
+  font-size: 2rem;
 }
 
 .project-button,
@@ -210,7 +245,7 @@ p {
 }
 
 .project-card-main {
-  border: 10px solid var(--buccaneer) !important;
+  border: 10px solid var(--peachfuzz) !important;
   border-radius: 25px !important;
   transition: box-shadow 0.3s; /* Add a transition for smooth effect */
 
@@ -225,7 +260,7 @@ p {
 
 .carousel-projects {
   background-color: var(--jasper);
-  width: 45% !important;
+  width: 50% !important;
   justify-content: center;
   background-color: transparent;
   transition: box-shadow 0.3s;
@@ -240,9 +275,10 @@ p {
 .carousel-pic {
   opacity: 0.9;
 }
+
 @media (max-width: 1250px) {
   .carousel-projects {
-    width: 90% !important; /* Change the width to 90% for small screens */
+    width: 100% !important; /* Change the width to 90% for small screens */
   }
 
   .carousel-pic {
@@ -251,6 +287,21 @@ p {
 
   .caption-title {
     color: var(--buccaneer) !important;
+  }
+
+  .caption-title {
+    color: var(--buccaneer) !important;
+    font-size: 1rem;
+  }
+
+  .languages {
+    font-size: 0.75rem;
+    margin-bottom: -20px;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: -10px;
   }
 }
 
@@ -261,28 +312,26 @@ p {
   .carousel-projects {
     width: 60% !important; /* Change the width to 90% for small screens */
   }
-  .caption-title {
-    color: var(--buccaneer) !important;
-  }
 }
 .carousel {
-  background-color: var(--jasper);
+  background-color: var(--pink);
 }
 .custom-tooltip2 .tooltip-inner {
   background-color: var(--pink);
-  color: var(--buccaneer);
+  color: var(--peachfuzz);
 }
 
 .experiences-header {
-  background-color: var(--copperrust) !important;
+  background-color: var(--pink) !important;
 }
 
 .experiences-card {
-  width: 70%;
+  width: 80%;
+  margin-top: 30px;
 }
 
 .experiences-body {
-  background-color: var(--blush);
+  background-color: var(--peachfuzz);
   color: var(--buccaneer);
 }
 
@@ -291,25 +340,40 @@ p {
   padding: 100px;
   position: relative;
   z-index: 1;
+  margin-left: 200px;
 }
 
+.intro-words {
+  /* position: relative;
+  z-index: 1;
+  background-color: var(--pink);
+  opacity: 0.5;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 100px;
+  margin-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px; */
+}
 .intro-text {
-  color: var(--copperrust);
+  color: var(--pink);
 
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: left;
+  margin-bottom: -10px;
 }
 
 .intro-name {
-  font-size: 6rem;
+  font-size: 7rem;
   color: var(--jasper);
   text-align: left;
 }
 
 .intro-title {
-  font-size: 3rem;
-  color: var(--apricot);
+  font-size: 3.5rem;
+  color: var(--pink);
   text-align: left;
+  margin-top: -40px;
 }
 
 /* .custom-tooltip2 .tooltiptext {
@@ -364,20 +428,68 @@ p {
 }
 
 .head2 {
-  color: var(--copperrust);
+  color: var(--pink);
   font-size: 1.75rem;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-left: 20px;
 }
 
 .head3 {
-  color: var(--copperrust);
+  color: var(--pink);
   font-size: 1.5rem;
   padding-left: 20px;
 }
 
 .bodyy {
   padding: 20px;
+}
+
+.skills-header {
+  text-align: left;
+  margin-left: 100px;
+  font-size: 4.5rem;
+}
+.skill-section {
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px;
+}
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 50px;
+}
+
+.logos {
+  height: 60px;
+  width: 60px;
+  display: flex;
+}
+
+.logo-name {
+  text-align: center;
+  color: var(--buccaneer);
+  margin-top: 10px;
+}
+
+.tech-labels {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--pink);
+}
+
+#resume-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--peachfuzz);
+
+  margin-left: 100px;
+  margin-right: 50px;
+  padding-top: 5px;
+  margin-bottom: 250px;
 }
 /* 
 .custom-tooltip2 .tooltiptext::after {
@@ -566,6 +678,222 @@ button:focus-visible {
 
 .poppins-black-italic {
   font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.barlow-condensed-thin {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-condensed-extralight {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-condensed-medium {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-condensed-extrabold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-condensed-black {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-condensed-thin-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-condensed-extralight-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-condensed-light-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-condensed-regular-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-condensed-medium-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-condensed-semibold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-condensed-bold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-condensed-extrabold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-condensed-black-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.montserrat-alternates-thin {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.montserrat-alternates-extralight {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-alternates-light {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-alternates-medium {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-alternates-semibold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-alternates-bold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-alternates-extrabold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.montserrat-alternates-black {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.montserrat-alternates-thin-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.montserrat-alternates-extralight-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.montserrat-alternates-light-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.montserrat-alternates-regular-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.montserrat-alternates-medium-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.montserrat-alternates-semibold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.montserrat-alternates-bold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.montserrat-alternates-extrabold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.montserrat-alternates-black-italic {
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 900;
   font-style: italic;
 }

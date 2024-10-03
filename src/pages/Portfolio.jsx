@@ -36,7 +36,7 @@ const projects = [
     languages: "JavaScript, Node.js, Express.js, Sequelize, Handlebars.js",
     link: "https://tech-blog-4o3v.onrender.com",
     repository: "https://github.com/danimsteger/tech-blog",
-    image: "./assets/tech.png",
+    image: "./assets/web.png",
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const projects = [
     languages: "JavaScript, HTML, jQuery, Bulma",
     link: "https://danimsteger.github.io/motivaction/",
     repository: "https://github.com/danimsteger/motivaction",
-    image: "./assets/motivaction.png",
+    image: "./assets/motiv.png",
   },
   {
     id: 6,
@@ -118,16 +118,20 @@ export default function Portfolio() {
               <Card.Body
                 style={{
                   textAlign: "center",
-                  backgroundColor: "var(--buccaneer)",
-                  color: "var(--blush)",
+                  backgroundColor: "var(--peachfuzz)",
+                  color: "var(--buccaneer)",
                 }}
               >
                 <Card.Title
-                  style={{ fontSize: "2rem", color: "var(--peachfuzz)" }}
+                  style={{ fontSize: "2rem", color: "var(--jasper)" }}
+                  className="calistoga-regular"
                 >
                   {projects[0].name}
                 </Card.Title>
-                <Card.Text style={{ fontSize: "1.25rem" }}>
+                <Card.Text
+                  style={{ fontSize: "1.25rem" }}
+                  className="montserrat-alternates-regular"
+                >
                   A full-stack web application designed for music enthusiasts to
                   search, save, and explore songs, artists, and events through
                   the integration of Spotify and Ticketmaster APIs. The
@@ -143,7 +147,7 @@ export default function Portfolio() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    backgroundColor: "var(--buccaneer)",
+                    backgroundColor: "var(--peachfuzz)",
                   }}
                 >
                   <OverlayTrigger
@@ -193,13 +197,13 @@ export default function Portfolio() {
               color: "var(--buccaneer)",
             }}
           >
-            <p>
+            <p className="poppins-bold">
               Beat Bound 🎧 and ReelTime 🎬 were two of the major collaborative
               projects that I completed as part of UNCC Coding Boot Camp. They
-              are both full stack, interactive web applications. Please be
-              patient.
+              are both full stack, interactive web applications.
             </p>
-            <p>
+            <p className="poppins-regular">Please be patient.</p>
+            <p className="poppins-regular">
               Some of the links to deployed applications take a few moments to
               load.
             </p>
@@ -216,16 +220,20 @@ export default function Portfolio() {
               <Card.Body
                 style={{
                   textAlign: "center",
-                  backgroundColor: "var(--buccaneer)",
-                  color: "var(--blush)",
+                  backgroundColor: "var(--peachfuzz)",
+                  color: "var(--buccaneer)",
                 }}
               >
                 <Card.Title
-                  style={{ fontSize: "2rem", color: "var(--peachfuzz)" }}
+                  style={{ fontSize: "2rem", color: "var(--jasper)" }}
+                  className="calistoga-regular"
                 >
                   {projects[1].name}
                 </Card.Title>
-                <Card.Text style={{ fontSize: "1.25rem" }}>
+                <Card.Text
+                  style={{ fontSize: "1.25rem" }}
+                  className="montserrat-alternates-regular"
+                >
                   A dynamic social media web application created for movie
                   enthusiasts to explore, review, and share opinions on films.
                   The project features a responsive and visually appealing
@@ -239,7 +247,7 @@ export default function Portfolio() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    backgroundColor: "var(--buccaneer)",
+                    backgroundColor: "var(--peachfuzz)",
                   }}
                 >
                   <OverlayTrigger
@@ -280,9 +288,7 @@ export default function Portfolio() {
       <Row
         style={{ display: "flex", justifyContent: "center", marginTop: 100 }}
       >
-        <h4 className="add-assign calistoga-regular">
-          Additional Assignments{" "}
-        </h4>
+        <h4 className="add-assign calistoga-regular">Additional Material </h4>
         <Carousel
           // style={{
           //   width: "65%",
@@ -294,7 +300,7 @@ export default function Portfolio() {
           {projects.map((project) => (
             <Carousel.Item
               key={project.id}
-              style={{ backgroundColor: "var(--jasper)", borderRadius: 25 }}
+              style={{ backgroundColor: "var(--pink)", borderRadius: 25 }}
             >
               <a href={project.link} target="_blank">
                 <img
@@ -306,16 +312,16 @@ export default function Portfolio() {
               </a>
               <Carousel.Caption style={{ backgroundColor: "transparent" }}>
                 <h3
-                  className="caption-title"
+                  className="caption-title calistoga-regular"
                   style={{
-                    color: "var(--pink)",
+                    color: "var(--buccaneer)",
                     backgroundColor: "transparent",
                   }}
                 >
                   {project.name}
                 </h3>
                 <p
-                  className="text-center"
+                  className="text-center montserrat-alternates-bold description"
                   style={{
                     backgroundColor: "transparent",
                     color: "var(--buccaneer)",
@@ -324,7 +330,7 @@ export default function Portfolio() {
                   {project.description}
                 </p>
                 <p
-                  className="text-center"
+                  className="text-center "
                   style={{
                     backgroundColor: "transparent",
                   }}
@@ -332,9 +338,10 @@ export default function Portfolio() {
                   <small
                     style={{
                       backgroundColor: "transparent",
-                      margin: 50,
+
                       color: "var(--buccaneer)",
                     }}
+                    className="poppins-regular languages"
                   >
                     {project.languages}
                   </small>
@@ -364,7 +371,7 @@ export default function Portfolio() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    backgroundColor: "var(--jasper)",
+                    backgroundColor: "var(--pink)",
                   }}
                 >
                   <OverlayTrigger
